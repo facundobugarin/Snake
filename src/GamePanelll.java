@@ -7,7 +7,7 @@ public class GamePanelll extends JPanel implements ActionListener{
 
 	static final int SCREEN_WIDTH = 600;
 	static final int SCREEN_HEIGHT = 600;
-	static final int UNIT_SIZE = 25; //tamaño de los cuadraditos de unidades donde moverse y spawnear manzana
+	static final int UNIT_SIZE = 25; //tamaÃ±o de los cuadraditos de unidades donde moverse y spawnear manzana
 	static final int GAME_UNITS = (SCREEN_WIDTH*SCREEN_HEIGHT)/(UNIT_SIZE*UNIT_SIZE);
 	static final int DELAY = 90;
 	final int x[] = new int[GAME_UNITS]; //array de todas las unidades horizontales
@@ -33,7 +33,7 @@ public class GamePanelll extends JPanel implements ActionListener{
 	public void startGame() {
 		newApple();
 		running = true;
-		timer = new Timer(DELAY,this); //no tengo idea de cómo funciona el action listener
+		timer = new Timer(DELAY,this); //chequear el action listener
 		timer.start();
 	}
 	public void paintComponent(Graphics g) {
